@@ -1,5 +1,5 @@
--- -- For conciseness
--- local opts = { noremap = true, silent = true }
+-- For conciseness
+local opts = { noremap = true, silent = true }
 --
 -- -- Set <space> as the leader key
 -- -- See `:help mapleader`
@@ -7,9 +7,9 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 --
--- -- Clear highlights on search when pressing <Esc> in normal mode
--- --  See `:help hlsearch`
--- vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+-- Clear highlights on search when pressing <Esc> in normal mode
+--  See `:help hlsearch`
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 --
 -- -- Diagnostic keymaps
 -- vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
@@ -60,12 +60,12 @@ vim.g.maplocalleader = " "
 -- vim.keymap.set("n", "n", "nzzzv")
 -- vim.keymap.set("n", "N", "Nzzzv")
 --
--- -- Buffers
--- vim.keymap.set("n", "<Tab>", ":bnext<CR>", opts)
--- vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>", opts)
--- vim.keymap.set("n", "<C-i>", "<C-i>", opts) -- to restore jump forward
--- vim.keymap.set("n", "<leader>x", ":Bdelete!<CR>", opts) -- close buffer
--- vim.keymap.set("n", "<leader>b", "<cmd> enew <CR>", opts) -- new buffer
+-- Buffers
+vim.keymap.set("n", "<Tab>", ":bnext<CR>", opts)
+vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>", opts)
+vim.keymap.set("n", "<C-i>", "<C-i>", opts) -- to restore jump forward
+vim.keymap.set("n", "<leader>x", ":Bdelete!<CR>", opts) -- close buffer
+vim.keymap.set("n", "<leader>b", "<cmd> enew <CR>", opts) -- new buffer
 --
 -- -- Window management
 -- vim.keymap.set("n", "<leader>v", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically

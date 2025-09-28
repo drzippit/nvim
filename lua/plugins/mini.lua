@@ -22,5 +22,7 @@ return {
 				option_toggle_prefix = [[]],
 			},
 		})
+		require("mini.cursorword").setup()
+		require("mini.tabline").setup()
 	end,
 }
