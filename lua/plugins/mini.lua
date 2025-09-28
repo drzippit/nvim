@@ -17,5 +17,10 @@ return {
 		require("mini.surround").setup()
 		require("mini.pairs").setup()
 		require("mini.move").setup()
+		require("mini.basics").setup({
+			mappings = {
+				option_toggle_prefix = [[]],
+			},
+		})
 	end,
 }
