@@ -34,11 +34,11 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 -- vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 -- vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 --
--- -- Resize with arrows
--- vim.keymap.set("n", "<Up>", ":resize +2<CR>", opts)
--- vim.keymap.set("n", "<Down>", ":resize -2<CR>", opts)
--- vim.keymap.set("n", "<Left>", ":vertical resize +2<CR>", opts)
--- vim.keymap.set("n", "<Right>", ":vertical resize -2<CR>", opts)
+-- Resize with arrows
+vim.keymap.set("n", "<Up>", ":resize +2<CR>", opts)
+vim.keymap.set("n", "<Down>", ":resize -2<CR>", opts)
+vim.keymap.set("n", "<Left>", ":vertical resize +2<CR>", opts)
+vim.keymap.set("n", "<Right>", ":vertical resize -2<CR>", opts)
 --
 -- -- save file
 -- vim.keymap.set("n", "<C-s>", "<cmd> w <CR>", opts)
