@@ -2,7 +2,16 @@ return {
 	"echasnovski/mini.nvim",
 	config = function()
 		require("mini.icons").setup()
-		require("mini.diff").setup()
+		require("mini.diff").setup({
+			view = {
+				style = "sign",
+				signs = {
+					add = "+",
+					change = "~",
+					delete = "-",
+				},
+			},
+		})
 		require("mini.git").setup()
 		-- Better Around/Inside textobjects
 		--
