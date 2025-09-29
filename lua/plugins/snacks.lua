@@ -18,13 +18,6 @@ return {
 		quickfile = { enabled = true },
 		scope = { enabled = true },
 		scroll = { enabled = true },
-		statuscolumn = {
-			enabled = true,
-			git = {
-				-- patterns to match Git signs
-				patterns = { "GitSign", "MiniDiffSign" },
-			},
-		},
 		words = { enabled = true },
 		git = { enabled = true },
 		styles = {
