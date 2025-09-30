@@ -1,6 +1,7 @@
 return {
 	"mistricky/codesnap.nvim",
 	build = "make",
+	lazy = true,
 	config = function()
 		require("codesnap").setup({
 			watermark = "",
