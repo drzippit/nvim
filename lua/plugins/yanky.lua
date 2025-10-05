@@ -1,6 +1,7 @@
 return {
 	"gbprod/yanky.nvim",
 	dependencies = { "folke/snacks.nvim" },
+	lazy = false,
 	keys = {
 		{
 			"<leader>p",
