@@ -1,7 +1,6 @@
 return {
 	"gbprod/yanky.nvim",
 	dependencies = { "folke/snacks.nvim" },
-	lazy = false,
 	keys = {
 		{
 			"<leader>p",
@@ -11,15 +10,42 @@ return {
 			mode = { "n", "x" },
 			desc = "Open Yank History",
 		},
-	},
-	opts = {
-		vim.keymap.set({ "n", "x" }, "p", "<Plug>(YankyPutAfter)"),
-		vim.keymap.set({ "n", "x" }, "P", "<Plug>(YankyPutBefore)"),
-		vim.keymap.set({ "n", "x" }, "gp", "<Plug>(YankyGPutAfter)"),
-		vim.keymap.set({ "n", "x" }, "gP", "<Plug>(YankyGPutBefore)"),
-
-		vim.keymap.set("n", "<c-p>", "<Plug>(YankyPreviousEntry)"),
-		vim.keymap.set("n", "<c-n>", "<Plug>(YankyNextEntry)"),
+		{
+			"p",
+			"<Plug>(YankyPutAfter)",
+			mode = { "n", "x" },
+			desc = "Yanky Put After",
+		},
+		{
+			"P",
+			"<Plug>(YankyPutBefore)",
+			mode = { "n", "x" },
+			desc = "Yanky Put Before",
+		},
+		{
+			"gp",
+			"<Plug>(YankyGPutAfter)",
+			mode = { "n", "x" },
+			desc = "Yanky G Put Before",
+		},
+		{
+			"gP",
+			"<Plug>(YankyGPutBefore)",
+			mode = { "n", "x" },
+			desc = "Yanky G Put Before",
+		},
+		{
+			"<c-p>",
+			"<Plug>(YankyPreviousEntry)",
+			mode = { "n" },
+			desc = "Yanky Previous Entry",
+		},
+		{
+			"<c-n>",
+			"<Plug>(YankyNextEntry)",
+			mode = { "n" },
+			desc = "Yanky Next Entry",
+		},
 	},
 	config = function()
 		require("yanky").setup({
