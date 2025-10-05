@@ -25,7 +25,7 @@ vim.keymap.set("n", "<leader>x", ":Bdelete!<CR>", opts) -- close buffer
 vim.keymap.set("n", "<leader>b", "<cmd> enew <CR>", opts) -- new buffer
 
 -- Open Lazy.nvim
-vim.keymap.set("n", "<leader>l", "<cmd> Lazy <CR>", opts)
+vim.keymap.set("n", "<leader>L", "<cmd> Lazy <CR>", opts)
 
 -- Code Action
 vim.keymap.set("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
