@@ -46,6 +46,12 @@ return {
 			mode = { "n" },
 			desc = "Yanky Next Entry",
 		},
+		{
+			"<leader>yc",
+			"<Plug>(YankyClearHistory)",
+			mode = { "n", "x" },
+			desc = "Yanky Clear History",
+		},
 	},
 	config = function()
 		require("yanky").setup({
