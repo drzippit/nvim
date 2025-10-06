@@ -30,6 +30,8 @@ return {
 				"tmux",
 				"toml",
 				"yaml",
+				"norg",
+				"norg_meta",
 			},
 			-- Autoinstall languages that are not installed
 			auto_install = true,

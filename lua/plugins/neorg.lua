@@ -5,15 +5,20 @@ return {
 	config = function()
 		require("neorg").setup({
 			load = {
+				["core.esupports.metagen"] = {},
+				["core.summary"] = {},
+				["core.itero"] = {},
 				["core.defaults"] = {},
-				["core.concealer"] = {},
+				["core.concealer"] = {
+					config = {
+						icon_preset = "diamond",
+					},
+				},
 				["core.dirman"] = {
 					config = {
 						default_workspace = "notes",
 						workspaces = {
 							notes = "~/Documents/neorg/",
-							work_notes = "~/Documents/neorg/work/",
-							private_notes = "~/Documents/neorg/private/",
 						},
 					},
 				},
