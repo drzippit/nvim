@@ -39,3 +39,6 @@ vim.o.cursorline = false
 
 -- Set conceal level to hide elements when not on it with the cursor
 vim.o.conceallevel = 3
+
+-- Set fold level to 99 so it doesn't fold anything automatically
+vim.o.foldlevel = 99
