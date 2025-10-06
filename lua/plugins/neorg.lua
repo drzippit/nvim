@@ -22,6 +22,11 @@ return {
 	end,
 	keys = {
 		{
+			"<leader>nj",
+			"<cmd>Neorg journal<CR>",
+			desc = "Neorg Journal",
+		},
+		{
 			"<leader>ni",
 			"<cmd>Neorg index<CR>",
 			desc = "Neorg Index",
