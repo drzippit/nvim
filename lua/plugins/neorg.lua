@@ -9,8 +9,11 @@ return {
 				["core.concealer"] = {},
 				["core.dirman"] = {
 					config = {
+						default_workspace = "notes",
 						workspaces = {
 							notes = "~/Documents/neorg/",
+							work_notes = "~/Documents/neorg/work/",
+							private_notes = "~/Documents/neorg/private/",
 						},
 					},
 				},
@@ -19,9 +22,19 @@ return {
 	end,
 	keys = {
 		{
-			"<leader><space>",
+			"<leader>ni",
+			"<cmd>Neorg index<CR>",
+			desc = "Neorg Index",
+		},
+		{
+			"<leader>nt",
 			"<cmd>Neorg toc<CR>",
-			desc = "Neorg toc",
+			desc = "Neorg Table of Context",
+		},
+		{
+			"<leader>nr",
+			"<cmd>Neorg return<CR>",
+			desc = "Neorg Return",
 		},
 	},
 }
