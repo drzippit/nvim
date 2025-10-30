@@ -101,6 +101,7 @@ return {
 				prettier = {},
 				marksman = {},
 				markdownlint = {},
+				hyprls = {},
 			}
 
 			local ensure_installed = vim.tbl_keys(servers or {})
