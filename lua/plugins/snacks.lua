@@ -5,6 +5,7 @@ return {
 	---@type snacks.Config
 	opts = {
 		bigfile = { enabled = true },
+		bufdelete = { enabled = true },
 		dashboard = { enabled = true },
 		explorer = { enabled = true },
 		indent = { enabled = true },
@@ -448,6 +449,13 @@ return {
 				Snacks.bufdelete()
 			end,
 			desc = "Delete Buffer",
+		},
+		{
+			"<leader>bo",
+			function()
+				Snacks.bufdelete.other()
+			end,
+			desc = "Delete All Buffers but current",
 		},
 		{
 			"<leader>cR",
