@@ -1,6 +1,7 @@
 return {
 	"catgoose/nvim-colorizer.lua",
-	event = "BufReadPre",
+	-- event = "BufReadPre",
+	lazy = true,
 	config = function()
 		require("colorizer").setup({
 			"*", -- Highlight all files, but customize some others.
