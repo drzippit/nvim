@@ -28,3 +28,6 @@ vim.keymap.set("n", "<leader>L", "<cmd> Lazy <CR>", opts)
 
 -- Code Action
 vim.keymap.set("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
+
+-- Open Dashboard
+vim.keymap.set("n", "<leader>td", "<cmd>lua Snacks.dashboard()<CR>", { desc = "Toggle dashboard" })

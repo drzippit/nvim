@@ -102,6 +102,7 @@ return {
 				marksman = {},
 				markdownlint = {},
 				hyprls = {},
+				pylsp = {},
 			}
 
 			local ensure_installed = vim.tbl_keys(servers or {})
